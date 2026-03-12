@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MOVILSAFE</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#F8FAFC;
+color:#1E293B;
+}
+
+h1,h2,h3{
+margin-bottom:10px;
+}
+
+section{
+padding:70px 20px;
+text-align:center;
+}
+
+/* HERO */
+
+.hero{
+background:#0F172A;
+color:white;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+font-size:18px;
+}
+
+/* BOTONS */
+
+button{
+padding:14px 30px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+margin-top:20px;
+}
+
+.cta-primary{
+background:#2563EB;
+color:white;
+}
+
+.cta-green{
+background:#22C55E;
+color:white;
+}
+
+/* PROBLEMA */
+
+.problem-container{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.problem-card{
+max-width:250px;
+}
+
+/* FUNCIONAMENT */
+
+.how{
+background:#E2E8F0;
+}
+
+.steps{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.step{
+max-width:250px;
+}
+
+/* PREU */
+
+.price-card{
+background:white;
+max-width:320px;
+margin:auto;
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.price{
+font-size:42px;
+color:#2563EB;
+margin:10px 0;
+}
+
+/* CTA FINAL */
+
+.final{
+background:#0F172A;
+color:white;
+}
+
+/* FOOTER */
+
+footer{
+padding:30px;
+text-align:center;
+font-size:14px;
+background:#0F172A;
+color:#94A3B8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Mou-te lliure. El teu VMP sempre protegit.</h1>
+
+<p>
+El sistema intel·ligent antirobatori amb GPS i alarma sonora
+per a patinets elèctrics i bicicletes.
+</p>
+
+<button class="cta-primary" onclick="reserve()">
+Reserva el teu dispositiu
+</button>
+
+</section>
+
+<!-- PROBLEMA -->
+
+<section>
+
+<h2>El problema que vius cada dia</h2>
+
+<p>
+Tens un patinet o bicicleta per moure’t per la ciutat,
+però deixar-lo al carrer sempre genera dubtes.
+</p>
+
+<div class="problem-container">
+
+<div class="problem-card">
+<h3>Universitat</h3>
+<p>
+Deixes el patinet fora mentre tens classe i passes tota
+l’estona pensant si encara hi serà.
+</p>
+</div>
+
+<div class="problem-card">
+<h3>Treball</h3>
+<p>
+Aparcar al carrer durant hores augmenta el risc
+de robatori del teu vehicle.
+</p>
+</div>
+
+<div class="problem-card">
+<h3>Nit</h3>
+<p>
+Tornar tard i deixar-lo fora de casa genera
+inseguretat i preocupació.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- COM FUNCIONA -->
+
+<section class="how">
+
+<h2>Com funciona</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1. Instal·la el GPS</h3>
+<p>
+Col·loca el dispositiu discretament al teu patinet o bicicleta.
+</p>
+</div>
+
+<div class="step">
+<h3>2. Connecta l’App</h3>
+<p>
+Vincula el dispositiu amb l’aplicació al teu mòbil i activa la protecció.
+</p>
+</div>
+
+<div class="step">
+<h3>3. Protecció activa</h3>
+<p>
+Si el vehicle es mou, reps una alerta al mòbil
+i s’activa una alarma sonora per espantar el lladre.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PREU -->
+
+<section>
+
+<h2>Oferta de llançament</h2>
+
+<div class="price-card">
+
+<h3>Starter</h3>
+
+<div class="price">19,99€</div>
+
+<p>Dispositiu GPS</p>
+<p>App mòbil</p>
+<p>Alertes en temps real</p>
+<p>Alarma sonora</p>
+
+<button class="cta-green" onclick="reserve()">
+Reservar ara
+</button>
+
+</div>
+
+</section>
+
+<!-- CTA FINAL -->
+
+<section class="final">
+
+<h2>Protegeix el teu vehicle avui</h2>
+
+<p>
+Uneix-te als primers usuaris que podran moure’s
+amb tranquil·litat per la ciutat.
+</p>
+
+<button class="cta-primary" onclick="info()">
+Més informació
+</button>
+
+</section>
+
+<footer>
+
+© 2026 Sistema Antirobatori VMP
+
+</footer>
+
+<script>
+
+function reserve(){
+alert("Gràcies per reservar! Aviat rebràs més informació.");
+}
+
+function info(){
+alert("En breu podràs veure tots els detalls del producte.");
+}
+
+</script>
+
+</body>
+</html>
